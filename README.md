@@ -2,7 +2,7 @@
 
 This is the reference PyTorch implementation for training and testing depth estimation models using the method described in
 
-> **Enhanced Modeling for Self-Supervised Monocular Depth Estimation**[10.1109/TCE.2025.3645823]()
+> **Enhanced Modeling for Self-Supervised Monocular Depth Estimation**[](10.1109/TCE.2025.3645823)
 > 
 >
 > [Clément Godard](http://www0.cs.ucl.ac.uk/staff/C.Godard/), [Oisin Mac Aodha](http://vision.caltech.edu/~macaodha/), [Michael Firman](http://www.michaelfirman.co.uk) and [Gabriel J. Brostow](http://www0.cs.ucl.ac.uk/staff/g.brostow/)
