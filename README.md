@@ -11,7 +11,7 @@
 | EM-Depth | M* | 640×192 |  |  |  |
 | EM-Depth | S |  |  |  |  |
 | EM-Depth | S+ | | | | |
-| EM-Depth | MS | | | | |
+| EM-Depth | MS | | | | | 
 | EM-Depth | MS* | | | | |
 |  |  | | | | |
 
