@@ -1,6 +1,6 @@
 # EM-Depth
 
-**Enhanced Modeling for Self-Supervised Monocular Depth Estimation**
+**Enhanced Modeling for Self-Supervised Monocular Depth Estimation  [Paper link](https://ieeexplore.ieee.org/document/11303883/)**
 
 ## Results 
 | Method | Data Augmentation | Resolution| Train | Train Images | AbsRel | δ < 1.25<sup>1</sup> |
@@ -22,10 +22,10 @@
 ## Datasets 
 
 ### KITTI
-Please refer to Monodepth2 to prepare  KITTI data.
+Please refer to [Monodepth2](https://github.com/nianticlabs/monodepth2) to prepare  KITTI data.
 
 ### Cityscapes and nuScenes
-Please refer to Dynamo-Depth to prepare  Cityscapes and nuScenes data.
+Please refer to [Dynamo-Depth](https://github.com/YihongSun/Dynamo-Depth) to prepare  Cityscapes and nuScenes data.
 
 For Cityscapes, the ground-truth files for the test set can be downloaded following the instructions provided by [ManyDepth](https://github.com/nianticlabs/manydepth).
 
@@ -81,7 +81,7 @@ python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.000
 
 ### large-scale video pre-training
 
-For large-scale pretraining, please refer to [nimbled](https://github.com/xapaxca/nimbled). We also provide our pretrained weights, `youtube_pretrain_weights`.
+For large-scale pretraining, please refer to [nimbled](https://github.com/xapaxca/nimbled). We also provide our pretrained weights [youtube_pretrain_HRNet](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing).
 
 ## Acknowledgement
 
