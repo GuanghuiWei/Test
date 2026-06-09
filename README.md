@@ -3,17 +3,20 @@
 **Enhanced Modeling for Self-Supervised Monocular Depth Estimation**
 
 ## Results 
-| Method   | Train | Resolution|ImageNet Pretrained | NimbleD Pretrained | AbsRel |
-| :---------------: | :--: | :----: | :---: | :---: | :-----: |
-| EM-Depth   | M | 640×192 | | |0.095  |
-| EM-Depth*   | M | 640×192 | | | 0.094  |
-| EM-Depth*+ND | M+  | 640×192 | ||0.089  |
-| EM-Depth | M* | 640×192 |  |  |  |
-| EM-Depth | S |  |  |  |  |
-| EM-Depth | S+ | | | | |
-| EM-Depth | MS | | | | | 
-| EM-Depth | MS* | | | | |
-|  |  | | | | |
+| Method       | Resolution| Train | Train images| AbsRel |
+| :-----------:|   :--:   | :----: | :---: | :---: | :-----: |
+| EM-Depth     | 640×192  | M       |       | |0.095  |
+| EM-Depth*    | 640×192  | M      |  | | 0.094  |
+| EM-Depth*+ND | 640×192  | M+     | ||0.089  |
+| EM-Depth     | 640×192  | M*     |  |  |  |
+| EM-Depth     | 640×192  | S        |  |  |  |
+| EM-Depth     | 640×192  | MS        |  |  |  |
+| EM-Depth     | 1024×320 | M        | | | |
+| EM-Depth     | 1024×320 |         | | | |
+| EM-Depth     | 1024×320 |         | | | |
+|              | 1280×384 |         | | | |
+|              | 1024×320 |         | | | |
+|              | 1024×320 |         | | | |
 
 Assuming a fresh [Anaconda](https://www.anaconda.com/download/) distribution, you can install the dependencies with:
 ```shell
