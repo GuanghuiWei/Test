@@ -68,18 +68,18 @@ python evaluate_depth.py \
 --load_weights_folder /path/to/your_weights
 ```
 
-## Training
+## ⏳Training
 
 ### pre-training Weights
 You can download the pretrained HRNet18 weights from the  [HRNet-Image-Classification](https://github.com/HRNet/HRNet-Image-Classification) repository.
 
-### ⏳ start training
+###  start training
 
 ```shell
 python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0 
 ```
 
-### Large-scale Video Pre-Training
+### large-scale video pre-training
 
 For large-scale pretraining, please refer to [nimbled](https://github.com/xapaxca/nimbled). We also provide our pretrained weights, `youtube_pretrain_weights`.
 
@@ -87,3 +87,15 @@ For large-scale pretraining, please refer to [nimbled](https://github.com/xapaxc
 
 We have benefited from code released by many excellent open-source projects, including [Monodepth2](https://github.com/nianticlabs/monodepth2), [Lite-Mono](https://github.com/noahzn/Lite-Mono), [MonoViT](https://github.com/zxcqlf/monovit), [Dynamo-Depth](https://github.com/YihongSun/Dynamo-Depth), [RA-Depth](https://github.com/hmhemu/RA-Depth), [BDE-Depth](https://github.com/LiuJF1226/BDEdepth), [NimbleD](https://github.com/xapaxca/nimbled), and [Depth Anything](https://github.com/LiheYoung/Depth-Anything). We sincerely thank the authors for their excellent work and contributions to the community.
 
+## Citation
+
+```shell
+@ARTICLE{11303883,
+  author={Wei, Guanghui and Wang, Laihua and Li, Shuai and Gao, Xingyu and Qi, Sumin and Yu, Yang and Wu, Liehao},
+  journal={IEEE Transactions on Consumer Electronics}, 
+  title={Enhanced Modeling for Self-Supervised Monocular Depth Estimation}, 
+  year={2026},
+  volume={72},
+  number={1},
+  pages={682-691},
+```
