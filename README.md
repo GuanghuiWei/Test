@@ -3,20 +3,20 @@
 **Enhanced Modeling for Self-Supervised Monocular Depth Estimation**
 
 ## Results 
-| Method       | Resolution | Train | Train images | AbsRel |
-|  :-------:   | :--------: |:--:| :--------: | :----: |
-| EM-Depth     | 640×192    | M  |  39,810    | 0.095  |
-| EM-Depth*    | 640×192    | M  |  39,810    | 0.094  |
-| EM-Depth*+ND | 640×192    | M+ |  39,810    | 0.089  |
-| EM-Depth     | 640×192    | M* |  71,634    | 0.079  |
-| EM-Depth     | 640×192    | S  |  39,810    | 0.095  |
-| EM-Depth     | 640×192    | MS |  39,810    | 0.093  |
-| EM-Depth     | 1024×320   | M  |  39,810    | 0.090  |
-| EM-Depth*+ND | 1024×320   | M+ |  39,810    | 0.086  |
-| EM-Depth     | 1024×320   | S  |  39,810    | 0.090  |
-| EM-Depth*+ND | 1280×384   | S+ |  45,200    | 0.084  |
-| EM-Depth     | 1024×320   | MS |  39,810    | 0.087  |
-| EM-Depth     | 1024×320   | MS*|  71,634    | 0.072  |
+| Method | Data Augmentation | Resolution| Train | Train images | AbsRel |
+|  :-------:   | :--------:| :--------: |:--:| :--------: | :----: |
+| EM-Depth     | SCM     | 640×192    | M  |  39,810    | 0.095  |
+| EM-Depth*    | SCM+RC  | 640×192    | M  |  39,810    | 0.094  |
+| EM-Depth*+ND | SCM+RC  | 640×192    | M+ |  39,810    | 0.089  |
+| EM-Depth     | SCM     | 640×192    | M* |  71,634    | 0.079  |
+| EM-Depth     | SCM     | 640×192    | S  |  39,810    | 0.095  |
+| EM-Depth     | SCM     | 640×192    | MS |  39,810    | 0.093  |
+| EM-Depth     | SCM     | 1024×320   | M  |  39,810    | 0.090  |
+| EM-Depth*+ND | SCM+RC  | 1024×320   | M+ |  39,810    | 0.086  |
+| EM-Depth     | SCM     | 1024×320   | S  |  39,810    | 0.090  |
+| EM-Depth*+ND | SCM+RC  | 1280×384   | S+ |  45,200    | 0.084  |
+| EM-Depth     | SCM     | 1024×320   | MS |  39,810    | 0.087  |
+| EM-Depth     | SCM     | 1024×320   | MS*|  71,634    | 0.072  |
 
 Assuming a fresh [Anaconda](https://www.anaconda.com/download/) distribution, you can install the dependencies with:
 ```shell
