@@ -21,10 +21,10 @@
 
 ## Datasets 
 
-###KITTI
+### KITTI
 Please refer to Monodepth2 to prepare  KITTI data.
 
-###Cityscapes and nuScenes
+### Cityscapes and nuScenes
 Please refer to Dynamo-Depth to prepare  Cityscapes and nuScenes data.
 For nuScenes, we use a day-clear subset, and the corresponding file list is provided in `splits/nuScenes/train_files.txt`.
 
@@ -67,10 +67,10 @@ python evaluate_depth.py \
 
 ## Training
 
-###pre-training Weights
+### pre-training Weights
 You can download the pretrained HRNet18 weights from the  [HRNet-Image-Classification](https://github.com/HRNet/HRNet-Image-Classification) repository.
 
-###start training
+### start training
 
 ```shell
 python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0 
