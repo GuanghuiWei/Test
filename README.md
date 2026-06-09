@@ -65,9 +65,19 @@ python evaluate_depth.py \
 --load_weights_folder /path/to/your_weights
 ```
 
+## Training
+
+###pre-training Weights
+You can download the pretrained HRNet18 weights from the  [HRNet-Image-Classification](https://github.com/HRNet/HRNet-Image-Classification) repository.
+
+###start training
+
+```shell
+python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0 
+```
 
 
-## 🖼️ Prediction for a single image
+🖼️ Prediction for a single image
 
 You can predict scaled disparity for a single image with:
 
