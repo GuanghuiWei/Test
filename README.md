@@ -55,7 +55,7 @@ python evaluate_depth.py \
 --height 192 \
 --width 640 \
 --load_weights_folder /path/to/your_weights \
---use_stereo # stereo
+--use_stereo # if use stereo
 ```
 
 Specify the path of the dataset to be evaluated. For example, to evaluate only on KITTI, provide only:
@@ -76,7 +76,7 @@ You can download the pretrained HRNet18 weights from the  [HRNet-Image-Classific
 ###  start training
 
 ```shell
-python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0 
+python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0 1 2 3
 ```
 
 ### large-scale video pre-training
