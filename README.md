@@ -18,31 +18,66 @@
 | EM-Depth     | SCM     | 1024×320   | MS |  39,810    | 0.087 | 0.919 |
 | EM-Depth     | SCM     | 1024×320   | MS*|  71,634    | 0.072 | 0.931 |
 
-Assuming a fresh [Anaconda](https://www.anaconda.com/download/) distribution, you can install the dependencies with:
+
+## Datasets 
+
+###KITTI
+Please refer to Monodepth2 to prepare  KITTI data.
+
+###Cityscapes and nuScenes
+Please refer to Dynamo-Depth to prepare  Cityscapes and nuScenes data.
+For nuScenes, we use a day-clear subset, and the corresponding file list is provided in `splits/nuScenes/train_files.txt`.
+
+
+## Setup
+
+Install the dependencies with:
 ```shell
-conda install pytorch=0.4.1 torchvision=0.2.1 -c pytorch
-pip install tensorboardX==1.4
-conda install opencv=3.3.1   # just needed for evaluation
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install Albumentations==0.5.0 numpy==1.24.4 opencv-python==4.9.0.80 opencv-python-headless==4.9.0.80
+pip install scikit-image scipy matplotlib pillow scipy timm thop
+pip install linear-warmup-cosine-annealing-warm-restarts-weight-decay==1.0 # refer LiteMono
 ```
-We ran our experiments with PyTorch 0.4.1, CUDA 9.1, Python 3.6.6 and Ubuntu 18.04.
-We have also successfully trained models with PyTorch 1.0, and our code is compatible with Python 2.7. You may have issues installing OpenCV version 3.3.1 if you use Python 3.7, we recommend to create a virtual environment with Python 3.6.6 `conda create -n monodepth2 python=3.6.6 anaconda `.
 
-<!-- We recommend using a [conda environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) to avoid dependency conflicts.
+## Evaluation
 
-We also recommend using `pillow-simd` instead of `pillow` for faster image preprocessing in the dataloaders. -->
+
+```shell
+python evaluate_depth.py \
+--kitti_path /path/to/your_kitti \
+--cityscapes_path /path/to/your_cityscapes \
+--nuscenes_path /path/to/your_nuscenes \
+--make3d_path /path/to/your_make3d \
+--nyuv2_path /path/to/your_nyuv2 \
+--height 192 \
+--width 640 \
+--load_weights_folder /path/to/your_weights \
+--use_stereo # stereo
+```
+
+Specify the path of the dataset to be evaluated. For example, to evaluate only on KITTI, provide only:
+
+```shell
+python evaluate_depth.py \
+--kitti_path /path/to/your_kitti \
+--height 192 \
+--width 640 \
+--load_weights_folder /path/to/your_weights
+```
+
 
 
 ## 🖼️ Prediction for a single image
 
 You can predict scaled disparity for a single image with:
 
-```shell
-python test_simple.py --image_path assets/test_image.jpg --model_name mono+stereo_640x192
+​```shell
+python evaluate_depth_our.py --kitti_path /data-8t01/monster/data_my/ --load_weights_folder /data-8t01/monster/EM-Depth/tmp_AAA/mytrain_AAAN/models/weights_0/
 ```
 
 or, if you are using a stereo-trained model, you can estimate metric depth with
 
-```shell
+​```shell
 python test_simple.py --image_path assets/test_image.jpg --model_name mono+stereo_640x192 --pred_metric_depth
 ```
 
