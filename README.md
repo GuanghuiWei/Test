@@ -3,7 +3,7 @@
 **Enhanced Modeling for Self-Supervised Monocular Depth Estimation**
 
 ## Results 
-| Method | Data Augmentation | Resolution| Train | Train images | AbsRel |
+| Method | Data Augmentation | Resolution| Train | Train Images | AbsRel | δ < 1.25<sup>1</sup> |
 |  :-------:   | :--------:| :--------: |:--:| :--------: | :----: |
 | EM-Depth     | SCM     | 640×192    | M  |  39,810    | 0.095  |
 | EM-Depth*    | SCM+RC  | 640×192    | M  |  39,810    | 0.094  |
