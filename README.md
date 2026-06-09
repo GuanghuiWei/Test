@@ -4,7 +4,7 @@
 
 ## Results 
 | Method       | Resolution | Train | Train images | AbsRel |
-|   :-------:  | :--------: |:--:| :--------: | :----: |
+|  :-------:   | :--------: |:--:| :--------: | :----: |
 | EM-Depth     | 640×192    | M  |  39,810    | 0.095  |
 | EM-Depth*    | 640×192    | M  |  39,810    | 0.094  |
 | EM-Depth*+ND | 640×192    | M+ |  39,810    | 0.089  |
@@ -17,6 +17,7 @@
 | EM-Depth*+ND | 1280×384   | S+ |  45,200    | 0.084  |
 | EM-Depth     | 1024×320   | MS |  39,810    | 0.087  |
 | EM-Depth     | 1024×320   | MS*|  71,634    | 0.072  |
+
 Assuming a fresh [Anaconda](https://www.anaconda.com/download/) distribution, you can install the dependencies with:
 ```shell
 conda install pytorch=0.4.1 torchvision=0.2.1 -c pytorch
