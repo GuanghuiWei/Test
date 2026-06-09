@@ -5,15 +5,15 @@
 ## Results 
 | Method       | Resolution| Train | Train images| AbsRel |
 | :-----------:|   :--:   | :----: | :---: | :---: | :-----: |
-| EM-Depth     | 640×192  | M       |       | |0.095  |
+| EM-Depth     | 640×192  | M      |       | |0.095  |
 | EM-Depth*    | 640×192  | M      |  | | 0.094  |
 | EM-Depth*+ND | 640×192  | M+     | ||0.089  |
 | EM-Depth     | 640×192  | M*     |  |  |  |
 | EM-Depth     | 640×192  | S        |  |  |  |
 | EM-Depth     | 640×192  | MS        |  |  |  |
 | EM-Depth     | 1024×320 | M        | | | |
-| EM-Depth     | 1024×320 |         | | | |
-| EM-Depth     | 1024×320 |         | | | |
+| EM-Depth*+ND | 1024×320 | M+        | | | |
+| EM-Depth     | 1024×320 | S        | | | |
 |              | 1280×384 |         | | | |
 |              | 1024×320 |         | | | |
 |              | 1024×320 |         | | | |
