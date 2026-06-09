@@ -5,16 +5,16 @@
 ## Results 
 | Method | Data Augmentation | Resolution| Train | Train Images | AbsRel | δ < 1.25<sup>1</sup> |
 |  :----------:   | :--------:| :--------: |:--:| :--------: | :----: |:----: |
-| EM-Depth     | SCM     | 640×192    | M  |  39,810    | 0.095 | 0.905 |
-| EM-Depth*    | SCM+RC  | 640×192    | M  |  39,810    | 0.094 | 0.906 |
-| EM-Depth*+NimbleD | SCM+RC  | 640×192    | M+ |  39,810    | 0.089 | 0.914 |
-| EM-Depth     | SCM     | 640×192    | M* |  71,634    | 0.079 | 0.927 |
+| [EM-Depth](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing)     | SCM     | 640×192    | M  |  39,810    | 0.095 | 0.905 |
+| [EM-Depth*](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing)    | SCM+RC  | 640×192    | M  |  39,810    | 0.094 | 0.906 |
+| [EM-Depth\*+NimbleD](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing) | SCM+RC  | 640×192    | M+ |  39,810    | 0.089 | 0.914 |
+| [EM-Depth](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing)     | SCM     | 640×192    | M* |  71,634    | 0.079 | 0.927 |
 | EM-Depth     | SCM     | 640×192    | S  |  39,810    | 0.095 | 0.889 |
 | EM-Depth     | SCM     | 640×192    | MS |  39,810    | 0.093 | 0.908 |
 | EM-Depth     | SCM     | 1024×320   | M  |  39,810    | 0.090 | 0.913 |
-| EM-Depth*+NimbleD | SCM+RC  | 1024×320   | M+ |  39,810    | 0.086 | 0.921 |
+| [EM-Depth\*+NimbleD](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing) | SCM+RC  | 1024×320   | M+ |  39,810    | 0.086 | 0.921 |
 | EM-Depth     | SCM     | 1024×320   | S  |  39,810    | 0.090 | 0.899 |
-| EM-Depth*+NimbleD | SCM+RC  | 1280×384   | S+ |  45,200    | 0.084 | 0.913 |
+|[EM-Depth\*+NimbleD](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing) | SCM+RC  | 1280×384   | S+ |  45,200    | 0.084 | 0.913 |
 | EM-Depth     | SCM     | 1024×320   | MS |  39,810    | 0.087 | 0.919 |
 | EM-Depth     | SCM     | 1024×320   | MS*|  71,634    | 0.072 | 0.931 |
 
