@@ -24,10 +24,11 @@
 ### KITTI
 Please refer to [Monodepth2](https://github.com/nianticlabs/monodepth2) to prepare  KITTI data.
 
-### Cityscapes and nuScenes
-Please refer to [Dynamo-Depth](https://github.com/YihongSun/Dynamo-Depth) to prepare  Cityscapes and nuScenes data.
+### Cityscapes
+Please refer to [DynamicDepth](https://github.com/AutoAILab/DynamicDepth) to prepare Cityscapes data.
 
-For Cityscapes, the ground-truth files for the test set can be downloaded following the instructions provided by [ManyDepth](https://github.com/nianticlabs/manydepth).
+### nuScenes
+Please refer to [Dynamo-Depth](https://github.com/YihongSun/Dynamo-Depth) to prepare nuScenes data.
 
 For nuScenes, we use a day-clear subset, and the corresponding file list is provided in `splits/nuScenes/train_files.txt`.
 
@@ -55,7 +56,7 @@ python evaluate_depth.py \
 --height 192 \
 --width 640 \
 --load_weights_folder /path/to/your_weights \
---use_stereo # if use stereo
+# --use_stereo  # if use stereo
 ```
 
 Specify the path of the dataset to be evaluated. For example, to evaluate only on KITTI, provide only:
