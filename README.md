@@ -40,7 +40,7 @@ Install the dependencies with:
 pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 pip install Albumentations==0.5.0 numpy==1.24.4 opencv-python==4.9.0.80 opencv-python-headless==4.9.0.80
 pip install scikit-image scipy matplotlib pillow scipy timm thop
-pip install linear-warmup-cosine-annealing-warm-restarts-weight-decay==1.0 # refer LiteMono
+pip install linear-warmup-cosine-annealing-warm-restarts-weight-decay==1.0 # refer Lite-Mono
 ```
 
 ## Evaluation
