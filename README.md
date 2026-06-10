@@ -41,6 +41,7 @@ pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f ht
 pip install Albumentations==0.5.0 numpy==1.24.4 opencv-python==4.9.0.80 opencv-python-headless==4.9.0.80
 pip install scikit-image scipy matplotlib pillow scipy timm thop
 pip install linear-warmup-cosine-annealing-warm-restarts-weight-decay==1.0 # refer Lite-Mono
+pip install transformers==4.38.2 # for generate_kitti_pseudo_labels.py
 ```
 
 ## Evaluation
@@ -77,7 +78,7 @@ You can download the pretrained HRNet18 weights from the  [HRNet-Image-Classific
 ###  start training
 
 ```shell
-python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0 1 2 3
+python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0
 ```
 
 ### large-scale video pre-training
