@@ -2,6 +2,8 @@
 
 **Enhanced Modeling for Self-Supervised Monocular Depth Estimation  [Paper link](https://ieeexplore.ieee.org/document/11303883/)**
 
+Accepted by IEEE Transactions on Consumer Electronics (TCE), 2026
+
 ## Results 
 | Method | Data Augmentation | Resolution| Train | Train Images | AbsRel | δ < 1.25<sup>1</sup> |
 |  :----------:   | :--------:| :--------: |:--:| :--------: | :----: |:----: |
@@ -71,17 +73,23 @@ python evaluate_depth.py \
 
 ## ⏳Training
 
-### large-scale video pre-training
-For large-scale pretraining, please refer to [nimbled](https://github.com/xapaxca/nimbled). We also provide our pretrained weights [youtube_pretrain_HRNet](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing).
+### Large-scale video pre-training
+For large-scale pretraining, please refer to [NimbleD](https://github.com/xapaxca/nimbled). We also provide our pretrained weights [DHRNet+NimbleD](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing).
 
-###  start training
+### Prepare pseudo-labels
+
+```shell
+ python generate_kitti_pseudo_labels.py --data_dir /path/to/your_kitti #refer NimbleD
+```
+
+###  Start training
 
 ```shell
 python train.py  --model_name mytrain --num_epochs 20 --batch_size 12 --lr 0.0001 5e-6 11 0.0001 1e-5 11 --scales 0
 ```
 
-### pre-training Weights
-You can download the pretrained HRNet18 weights from the  [HRNet-Image-Classification](https://github.com/HRNet/HRNet-Image-Classification) repository.
+### Pre-training Weights
+If you want to reproduce the results of EM-Depth, you can download the pretrained HRNet18 weights from the  [HRNet-Image-Classification](https://github.com/HRNet/HRNet-Image-Classification) repository.
 
 
 ## Acknowledgement
