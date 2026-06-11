@@ -74,12 +74,12 @@ python evaluate_depth.py \
 ## ⏳Training
 
 ### Large-scale video pre-training
-For large-scale pretraining, please refer to [NimbleD](https://github.com/xapaxca/nimbled). We also provide our pretrained weights [DHRNet+NimbleD](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing).
+For large-scale pretraining, please refer to NimbleD. We also provide our pretrained weights [DHRNet+NimbleD](https://drive.google.com/drive/folders/1vqofkpdZ2L0fSvmaFpkDN-KuGPpZpjcd?usp=sharing).
 
 ### Prepare pseudo-labels
 
 ```shell
- python generate_kitti_pseudo_labels.py --data_dir /path/to/your_kitti #refer NimbleD
+python generate_kitti_pseudo_labels.py --data_dir /path/to/your_kitti # refer NimbleD
 ```
 
 ###  Start training
